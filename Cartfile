@@ -1,0 +1,5 @@
+github "ReactiveCocoa/ReactiveCocoa" "master"
+github "thoughtbot/Argo" "master"
+github "thoughtbot/Curry" "master"
+github "thoughtbot/Perform" "swift-3"
+github "thoughtbot/Swish" "swift-3.0"
