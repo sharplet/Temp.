@@ -3,19 +3,17 @@ import ReactiveSwift
 import Swish
 import Result
 
-private typealias _TemperatureProvider = TemperatureProvider
-
 enum DarkSky {
   enum API {
     static let forecastURL = URL(string: "https://api.darksky.net/forecast/6d151d55d894d57243b9aa380aa3888d")!
   }
 
-  final class TemperatureProvider: _TemperatureProvider {
-    let latestTemperature: Property<Temperature?>
-    let updateTemperature: Action<Location, Temperature, Temp.Error>
+  final class TemperatureProvider: DataProvider {
+    let latest: Property<Temperature?>
+    let update: Action<Location, Temperature, Temp.Error>
 
     init() {
-      updateTemperature = Action { location in
+      update = Action { location in
         let request = CurrentConditionsRequest(location: location)
 
         return APIClient().rac_response(for: request)
@@ -23,7 +21,7 @@ enum DarkSky {
           .map { $0.temperature }
       }
 
-      latestTemperature = Property(initial: nil, then: updateTemperature.values.map(Optional.some))
+      latest = Property(initial: nil, then: update.values.map(Optional.some))
     }
   }
 

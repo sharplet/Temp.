@@ -3,18 +3,18 @@ import ReactiveCocoa
 import ReactiveSwift
 import enum Result.NoError
 
-final class CoreLocationProvider: NSObject, LocationProvider {
-  let latestLocation: Property<Location?>
-  let updateLocation: Action<(), Location, Temp.Error>
+final class CoreLocationProvider: NSObject, DataProvider {
+  let latest: Property<Location?>
+  let update: Action<(), Location, Temp.Error>
 
   override init() {
     let locationDelegate = LocationDelegate()
-    updateLocation = Action {
+    update = Action {
       let authorize = locationDelegate.requestAuthorization()
       let update = locationDelegate.updateLocation()
       return authorize.then(update)
     }
-    latestLocation = Property(initial: nil, then: updateLocation.values.map(Optional.some))
+    latest = Property(initial: nil, then: update.values.map(Optional.some))
     super.init()
   }
 }

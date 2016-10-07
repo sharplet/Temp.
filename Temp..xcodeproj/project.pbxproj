@@ -13,7 +13,6 @@
 		4A383A771DA7352F00297D47 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A761DA7352F00297D47 /* Temperature.swift */; };
 		4A383A791DA7363200297D47 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A383A781DA7363200297D47 /* Curry.framework */; };
 		4A383A7A1DA7363200297D47 /* Curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A383A781DA7363200297D47 /* Curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4A383A7C1DA737E400297D47 /* TemperatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A7B1DA737E400297D47 /* TemperatureProvider.swift */; };
 		4AA79C9D1DA5E2B60054230A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79C871DA5E2B60054230A /* AppDelegate.swift */; };
 		4AA79CA71DA5E2B60054230A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA79C971DA5E2B60054230A /* Main.storyboard */; };
 		4AA79CAB1DA5E2FD0054230A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AA79CAA1DA5E2FD0054230A /* Images.xcassets */; };
@@ -39,10 +38,10 @@
 		4AA79D241DA66FA20054230A /* Swish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA79CFB1DA66F680054230A /* Swish.framework */; };
 		4AA79D251DA66FA20054230A /* Swish.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA79CFB1DA66F680054230A /* Swish.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AA79D281DA670E80054230A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA79D271DA670E80054230A /* LaunchScreen.storyboard */; };
-		4AA79D2C1DA673F60054230A /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79D2B1DA673F60054230A /* LocationProvider.swift */; };
 		4AA79D2E1DA674420054230A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79D2D1DA674420054230A /* Location.swift */; };
 		4AA79D301DA6745F0054230A /* Temp.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79D2F1DA6745F0054230A /* Temp.Error.swift */; };
 		4AA79D321DA674B00054230A /* CoreLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79D311DA674B00054230A /* CoreLocationProvider.swift */; };
+		4AC9BCFB1DA755A700D28CD8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BCFA1DA755A700D28CD8 /* DataProvider.swift */; };
 		4AF68E1D1DA73AE400C37DA8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF68E1C1DA73AE400C37DA8 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,7 +95,6 @@
 		4A383A741DA72E5900297D47 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		4A383A761DA7352F00297D47 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		4A383A781DA7363200297D47 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
-		4A383A7B1DA737E400297D47 /* TemperatureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureProvider.swift; sourceTree = "<group>"; };
 		4A671BB11DA5E260006CA036 /* Temp..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Temp..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA79C871DA5E2B60054230A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AA79C8A1DA5E2B60054230A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,10 +114,10 @@
 		4AA79CFA1DA66F680054230A /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
 		4AA79CFB1DA66F680054230A /* Swish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swish.framework; path = Carthage/Build/iOS/Swish.framework; sourceTree = "<group>"; };
 		4AA79D271DA670E80054230A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4AA79D2B1DA673F60054230A /* LocationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
 		4AA79D2D1DA674420054230A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		4AA79D2F1DA6745F0054230A /* Temp.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.Error.swift; sourceTree = "<group>"; };
 		4AA79D311DA674B00054230A /* CoreLocationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationProvider.swift; sourceTree = "<group>"; };
+		4AC9BCFA1DA755A700D28CD8 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		4AF68E1C1DA73AE400C37DA8 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,8 +219,7 @@
 		4AA79C8D1DA5E2B60054230A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4AA79D2B1DA673F60054230A /* LocationProvider.swift */,
-				4A383A7B1DA737E400297D47 /* TemperatureProvider.swift */,
+				4AC9BCFA1DA755A700D28CD8 /* DataProvider.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -453,10 +450,9 @@
 				4AA79C9D1DA5E2B60054230A /* AppDelegate.swift in Sources */,
 				4AA79D2E1DA674420054230A /* Location.swift in Sources */,
 				4AA79D301DA6745F0054230A /* Temp.Error.swift in Sources */,
+				4AC9BCFB1DA755A700D28CD8 /* DataProvider.swift in Sources */,
 				4A383A751DA72E5900297D47 /* Date.swift in Sources */,
 				4A383A771DA7352F00297D47 /* Temperature.swift in Sources */,
-				4A383A7C1DA737E400297D47 /* TemperatureProvider.swift in Sources */,
-				4AA79D2C1DA673F60054230A /* LocationProvider.swift in Sources */,
 				4AF68E1D1DA73AE400C37DA8 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
