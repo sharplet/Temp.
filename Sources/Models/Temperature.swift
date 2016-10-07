@@ -33,12 +33,8 @@ enum Temperature {
   }
 }
 
-extension Temperature {
-  static func decodeFahrenheit(_ json: JSON) -> Decoded<Temperature> {
+extension Temperature: Decodable {
+  static func decode(_ json: JSON) -> Decoded<Temperature> {
     return Temperature.fahrenheit <^> Double.decode(json)
-  }
-
-  static func decodeCelsius(_ json: JSON) -> Decoded<Temperature> {
-    return Temperature.celsius <^> Double.decode(json)
   }
 }

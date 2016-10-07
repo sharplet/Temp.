@@ -10,7 +10,7 @@ struct Forecast {
 extension Forecast: Decodable {
   static func decode(_ json: JSON) -> Decoded<Forecast> {
     return curry(Forecast.init)
-      <^> (json <| "temperature" >>- Temperature.decodeFahrenheit)
+      <^> json <| "temperature"
       <*> json <| "time"
   }
 }
