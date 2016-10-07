@@ -14,7 +14,16 @@ enum Temperature {
     }
   }
 
-  var fahrenheitValue: Temperature {
+  var value: Double {
+    switch self {
+    case .fahrenheit(let value):
+      return value
+    case .celsius(let value):
+      return value
+    }
+  }
+
+  var fahrenheit: Temperature {
     switch self {
     case .fahrenheit:
       return self
@@ -23,7 +32,7 @@ enum Temperature {
     }
   }
 
-  var celsiusValue: Temperature {
+  var celsius: Temperature {
     switch self {
     case .fahrenheit:
       return .celsius(measurement.converted(to: .celsius).value)
