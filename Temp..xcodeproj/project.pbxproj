@@ -42,6 +42,7 @@
 		4AA79D301DA6745F0054230A /* Temp.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79D2F1DA6745F0054230A /* Temp.Error.swift */; };
 		4AA79D321DA674B00054230A /* CoreLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79D311DA674B00054230A /* CoreLocationProvider.swift */; };
 		4AC9BCFB1DA755A700D28CD8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BCFA1DA755A700D28CD8 /* DataProvider.swift */; };
+		4AC9BCFD1DA756F500D28CD8 /* PersistentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BCFC1DA756F500D28CD8 /* PersistentDataProvider.swift */; };
 		4AC9BCFF1DA7585800D28CD8 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BCFE1DA7585800D28CD8 /* Encodable.swift */; };
 		4AC9BD011DA75EE600D28CD8 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BD001DA75EE600D28CD8 /* JSON.swift */; };
 		4AF68E1D1DA73AE400C37DA8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF68E1C1DA73AE400C37DA8 /* APIClient.swift */; };
@@ -120,6 +121,7 @@
 		4AA79D2F1DA6745F0054230A /* Temp.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.Error.swift; sourceTree = "<group>"; };
 		4AA79D311DA674B00054230A /* CoreLocationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationProvider.swift; sourceTree = "<group>"; };
 		4AC9BCFA1DA755A700D28CD8 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		4AC9BCFC1DA756F500D28CD8 /* PersistentDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentDataProvider.swift; sourceTree = "<group>"; };
 		4AC9BCFE1DA7585800D28CD8 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		4AC9BD001DA75EE600D28CD8 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		4AF68E1C1DA73AE400C37DA8 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				4AA79C871DA5E2B60054230A /* AppDelegate.swift */,
 				4AA79D311DA674B00054230A /* CoreLocationProvider.swift */,
 				4A383A6D1DA729A300297D47 /* DarkSkyForecastProvider.swift */,
+				4AC9BCFC1DA756F500D28CD8 /* PersistentDataProvider.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				4AC9BD011DA75EE600D28CD8 /* JSON.swift in Sources */,
 				4A383A6E1DA729A300297D47 /* DarkSkyForecastProvider.swift in Sources */,
 				4AA79D321DA674B00054230A /* CoreLocationProvider.swift in Sources */,
+				4AC9BCFD1DA756F500D28CD8 /* PersistentDataProvider.swift in Sources */,
 				4AA79C9D1DA5E2B60054230A /* AppDelegate.swift in Sources */,
 				4AA79D2E1DA674420054230A /* Location.swift in Sources */,
 				4AA79D301DA6745F0054230A /* Temp.Error.swift in Sources */,
