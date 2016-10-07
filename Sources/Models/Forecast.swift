@@ -14,3 +14,12 @@ extension Forecast: Decodable {
       <*> json <| "time"
   }
 }
+
+extension Forecast: Encodable {
+  func encode() -> JSON {
+    return .object([
+      "temperature": temperature.encode(),
+      "time": time.encode()
+    ])
+  }
+}

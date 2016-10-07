@@ -47,3 +47,10 @@ extension Temperature: Decodable {
     return Temperature.fahrenheit <^> Double.decode(json)
   }
 }
+
+extension Temperature: Encodable {
+  func encode() -> JSON {
+    let number = NSNumber(value: fahrenheit.value)
+    return .number(number)
+  }
+}
