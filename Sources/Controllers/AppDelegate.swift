@@ -10,6 +10,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   func applicationDidBecomeActive(_ application: UIApplication) {
     locationProvider.updateLocation.apply()
       .flatMap(.merge, transform: temperatureProvider.updateTemperature.apply)
+      .map { $0.celsiusValue }
       .startWithResult {
         print($0)
       }
