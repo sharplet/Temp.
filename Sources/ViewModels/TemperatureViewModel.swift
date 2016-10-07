@@ -13,9 +13,9 @@ final class TemperatureViewModel {
 }
 
 private func celsiusString(from temperature: Temperature?) -> String {
-  return (temperature?.celsius.value).map { String(format: "%.0fºC", $0) } ?? "--ºC"
+  return (temperature?.celsius.value).map { String(format: "%.0fºC", $0.rounded()) } ?? "--ºC"
 }
 
 private func fahrenheitString(from temperature: Temperature?) -> String {
-  return (temperature?.fahrenheit.value).map { String(format: "%.0fºF", $0) } ?? "--ºF"
+  return (temperature?.fahrenheit.value).map { String(format: "%.0fºF", $0.rounded()) } ?? "--ºF"
 }
