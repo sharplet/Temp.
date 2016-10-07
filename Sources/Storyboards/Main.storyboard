@@ -12,7 +12,7 @@
         <!--Temp.-->
         <scene sceneID="JgJ-PU-sEZ">
             <objects>
-                <viewController id="FnH-Yg-Ntz" sceneMemberID="viewController">
+                <viewController id="FnH-Yg-Ntz" customClass="TemperatureViewController" customModule="Temp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FOc-Kw-19b"/>
                         <viewControllerLayoutGuide type="bottom" id="JvE-RV-9CX"/>
@@ -59,6 +59,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Temp." id="Phr-f9-M1R"/>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="NLQ-0w-SiG" id="s8l-zl-MKt"/>
+                        <outlet property="fahrenheitLabel" destination="m4z-r1-EMm" id="lgz-fp-btD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ahk-cM-Hsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

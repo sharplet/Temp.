@@ -45,7 +45,9 @@
 		4AC9BCFD1DA756F500D28CD8 /* PersistentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BCFC1DA756F500D28CD8 /* PersistentDataProvider.swift */; };
 		4AC9BCFF1DA7585800D28CD8 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BCFE1DA7585800D28CD8 /* Encodable.swift */; };
 		4AC9BD011DA75EE600D28CD8 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BD001DA75EE600D28CD8 /* JSON.swift */; };
+		4AC9BD031DA7EAC200D28CD8 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BD021DA7EAC200D28CD8 /* TemperatureViewController.swift */; };
 		4AC9BD051DA7ECA800D28CD8 /* TempNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BD041DA7ECA800D28CD8 /* TempNavigationController.swift */; };
+		4AE891271DA7F315003337EB /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE891261DA7F315003337EB /* TemperatureViewModel.swift */; };
 		4AF68E1D1DA73AE400C37DA8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF68E1C1DA73AE400C37DA8 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -125,7 +127,9 @@
 		4AC9BCFC1DA756F500D28CD8 /* PersistentDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentDataProvider.swift; sourceTree = "<group>"; };
 		4AC9BCFE1DA7585800D28CD8 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		4AC9BD001DA75EE600D28CD8 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		4AC9BD021DA7EAC200D28CD8 /* TemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
 		4AC9BD041DA7ECA800D28CD8 /* TempNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempNavigationController.swift; sourceTree = "<group>"; };
+		4AE891261DA7F315003337EB /* TemperatureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
 		4AF68E1C1DA73AE400C37DA8 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,6 +251,7 @@
 		4AA79C981DA5E2B60054230A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4AE891261DA7F315003337EB /* TemperatureViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 		4AA79D2A1DA673360054230A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4AC9BD021DA7EAC200D28CD8 /* TemperatureViewController.swift */,
 				4AC9BD041DA7ECA800D28CD8 /* TempNavigationController.swift */,
 			);
 			path = ViewControllers;
@@ -461,6 +467,7 @@
 				4A383A6E1DA729A300297D47 /* DarkSkyForecastProvider.swift in Sources */,
 				4AA79D321DA674B00054230A /* CoreLocationProvider.swift in Sources */,
 				4AC9BCFD1DA756F500D28CD8 /* PersistentDataProvider.swift in Sources */,
+				4AC9BD031DA7EAC200D28CD8 /* TemperatureViewController.swift in Sources */,
 				4AC9BD051DA7ECA800D28CD8 /* TempNavigationController.swift in Sources */,
 				4AA79C9D1DA5E2B60054230A /* AppDelegate.swift in Sources */,
 				4AA79D2E1DA674420054230A /* Location.swift in Sources */,
@@ -470,6 +477,7 @@
 				4A383A751DA72E5900297D47 /* Date.swift in Sources */,
 				4A383A771DA7352F00297D47 /* Temperature.swift in Sources */,
 				4AF68E1D1DA73AE400C37DA8 /* APIClient.swift in Sources */,
+				4AE891271DA7F315003337EB /* TemperatureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

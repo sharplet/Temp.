@@ -7,6 +7,10 @@ private let forecastCacheURL: URL = {
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
+  var temperatureViewController: TemperatureViewController? {
+    return window?.rootViewController?.childViewControllers.first as? TemperatureViewController
+  }
+
   var window: UIWindow?
 
   let locationProvider = CoreLocationProvider()
@@ -17,7 +21,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
   )
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-    forecastProvider.latest.producer.startWithValues { print($0?.temperature.celsius ?? "-") }
+    temperatureViewController?.viewModel = TemperatureViewModel(forecast: forecastProvider.latest)
     return true
   }
 
