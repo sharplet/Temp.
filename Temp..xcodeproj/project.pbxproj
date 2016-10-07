@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A383A6E1DA729A300297D47 /* DarkSkyTemperatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A6D1DA729A300297D47 /* DarkSkyTemperatureProvider.swift */; };
+		4A383A6E1DA729A300297D47 /* DarkSkyForecastProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A6D1DA729A300297D47 /* DarkSkyForecastProvider.swift */; };
 		4A383A731DA72D1400297D47 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A721DA72D1400297D47 /* Forecast.swift */; };
 		4A383A751DA72E5900297D47 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A741DA72E5900297D47 /* Date.swift */; };
 		4A383A771DA7352F00297D47 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A761DA7352F00297D47 /* Temperature.swift */; };
@@ -90,7 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4A383A6D1DA729A300297D47 /* DarkSkyTemperatureProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyTemperatureProvider.swift; sourceTree = "<group>"; };
+		4A383A6D1DA729A300297D47 /* DarkSkyForecastProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyForecastProvider.swift; sourceTree = "<group>"; };
 		4A383A721DA72D1400297D47 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		4A383A741DA72E5900297D47 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		4A383A761DA7352F00297D47 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 			children = (
 				4AA79C871DA5E2B60054230A /* AppDelegate.swift */,
 				4AA79D311DA674B00054230A /* CoreLocationProvider.swift */,
-				4A383A6D1DA729A300297D47 /* DarkSkyTemperatureProvider.swift */,
+				4A383A6D1DA729A300297D47 /* DarkSkyForecastProvider.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -445,7 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A383A731DA72D1400297D47 /* Forecast.swift in Sources */,
-				4A383A6E1DA729A300297D47 /* DarkSkyTemperatureProvider.swift in Sources */,
+				4A383A6E1DA729A300297D47 /* DarkSkyForecastProvider.swift in Sources */,
 				4AA79D321DA674B00054230A /* CoreLocationProvider.swift in Sources */,
 				4AA79C9D1DA5E2B60054230A /* AppDelegate.swift in Sources */,
 				4AA79D2E1DA674420054230A /* Location.swift in Sources */,

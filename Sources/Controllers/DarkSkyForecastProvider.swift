@@ -8,9 +8,9 @@ enum DarkSky {
     static let forecastURL = URL(string: "https://api.darksky.net/forecast/6d151d55d894d57243b9aa380aa3888d")!
   }
 
-  final class TemperatureProvider: DataProvider {
-    let latest: Property<Temperature?>
-    let update: Action<Location, Temperature, Temp.Error>
+  final class ForecastProvider: DataProvider {
+    let latest: Property<Forecast?>
+    let update: Action<Location, Forecast, Temp.Error>
 
     init() {
       update = Action { location in
@@ -18,7 +18,6 @@ enum DarkSky {
 
         return APIClient().rac_response(for: request)
           .mapError(Temp.Error.network)
-          .map { $0.temperature }
       }
 
       latest = Property(initial: nil, then: update.values.map(Optional.some))
