@@ -4,6 +4,7 @@ import UIKit
 final class TemperatureViewController: UIViewController {
   @IBOutlet private var celsiusLabel: UILabel!
   @IBOutlet private var fahrenheitLabel: UILabel!
+  @IBOutlet private var separator: UIView!
 
   var viewModel: TemperatureViewModel!
 
@@ -17,5 +18,13 @@ final class TemperatureViewController: UIViewController {
     viewModel.fahrenheitTemperature.producer
       .take(during: rac_lifetime)
       .startWithValues { [fahrenheitLabel] fahrenheit in fahrenheitLabel?.text = fahrenheit }
+  }
+
+  override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+    super.viewWillTransition(to: size, with: coordinator)
+    separator.alpha = 0
+    coordinator.animate(alongsideTransition: nil) { _ in
+      self.separator.alpha = 1
+    }
   }
 }

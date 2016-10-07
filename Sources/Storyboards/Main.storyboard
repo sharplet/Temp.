@@ -24,7 +24,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="swh-6X-oi9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--ºC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLQ-0w-SiG">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--ºC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="NLQ-0w-SiG">
                                         <rect key="frame" x="30" y="30" width="315" height="236.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="120"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,10 +34,22 @@
                                         <rect key="frame" x="30" y="296.5" width="315" height="10"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="10" id="UxA-Y2-sfg"/>
+                                            <constraint firstAttribute="height" priority="950" constant="10" id="0Q8-mQ-go3"/>
+                                            <constraint firstAttribute="width" priority="950" constant="10" id="hLi-Hq-Yhq"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="hLi-Hq-Yhq"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <exclude reference="0Q8-mQ-go3"/>
+                                                <include reference="hLi-Hq-Yhq"/>
+                                            </mask>
+                                        </variation>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--ºF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4z-r1-EMm">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--ºF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="m4z-r1-EMm">
                                         <rect key="frame" x="30" y="336.5" width="315" height="236.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="120"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,9 +57,21 @@
                                     </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="NLQ-0w-SiG" firstAttribute="width" secondItem="m4z-r1-EMm" secondAttribute="width" id="R1N-kz-Uqk"/>
                                     <constraint firstItem="NLQ-0w-SiG" firstAttribute="height" secondItem="m4z-r1-EMm" secondAttribute="height" id="e2s-2m-66b"/>
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="30" left="30" bottom="30" right="30"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="R1N-kz-Uqk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" axis="horizontal">
+                                    <mask key="constraints">
+                                        <include reference="R1N-kz-Uqk"/>
+                                        <exclude reference="e2s-2m-66b"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.30404865819999999" blue="0.4297866434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,6 +86,7 @@
                     <connections>
                         <outlet property="celsiusLabel" destination="NLQ-0w-SiG" id="s8l-zl-MKt"/>
                         <outlet property="fahrenheitLabel" destination="m4z-r1-EMm" id="lgz-fp-btD"/>
+                        <outlet property="separator" destination="xvN-o1-lMY" id="upd-l0-rmu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ahk-cM-Hsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
