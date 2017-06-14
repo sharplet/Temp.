@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A383A6E1DA729A300297D47 /* DarkSkyForecastProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A6D1DA729A300297D47 /* DarkSkyForecastProvider.swift */; };
+		4A383A731DA72D1400297D47 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A721DA72D1400297D47 /* Forecast.swift */; };
+		4A383A751DA72E5900297D47 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A741DA72E5900297D47 /* Date.swift */; };
+		4A383A771DA7352F00297D47 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A383A761DA7352F00297D47 /* Temperature.swift */; };
 		4A383A791DA7363200297D47 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A383A781DA7363200297D47 /* Curry.framework */; };
 		4A383A7A1DA7363200297D47 /* Curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4A383A781DA7363200297D47 /* Curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AA79C9D1DA5E2B60054230A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79C871DA5E2B60054230A /* AppDelegate.swift */; };
@@ -34,6 +38,17 @@
 		4AA79D241DA66FA20054230A /* Swish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA79CFB1DA66F680054230A /* Swish.framework */; };
 		4AA79D251DA66FA20054230A /* Swish.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA79CFB1DA66F680054230A /* Swish.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4AA79D281DA670E80054230A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AA79D271DA670E80054230A /* LaunchScreen.storyboard */; };
+		4AA79D2E1DA674420054230A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79D2D1DA674420054230A /* Location.swift */; };
+		4AA79D301DA6745F0054230A /* Temp.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79D2F1DA6745F0054230A /* Temp.Error.swift */; };
+		4AA79D321DA674B00054230A /* CoreLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA79D311DA674B00054230A /* CoreLocationProvider.swift */; };
+		4AC9BCFB1DA755A700D28CD8 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BCFA1DA755A700D28CD8 /* DataProvider.swift */; };
+		4AC9BCFD1DA756F500D28CD8 /* PersistentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BCFC1DA756F500D28CD8 /* PersistentDataProvider.swift */; };
+		4AC9BCFF1DA7585800D28CD8 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BCFE1DA7585800D28CD8 /* Encodable.swift */; };
+		4AC9BD011DA75EE600D28CD8 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BD001DA75EE600D28CD8 /* JSON.swift */; };
+		4AC9BD031DA7EAC200D28CD8 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BD021DA7EAC200D28CD8 /* TemperatureViewController.swift */; };
+		4AC9BD051DA7ECA800D28CD8 /* TempNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC9BD041DA7ECA800D28CD8 /* TempNavigationController.swift */; };
+		4AE891271DA7F315003337EB /* TemperatureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE891261DA7F315003337EB /* TemperatureViewModel.swift */; };
+		4AF68E1D1DA73AE400C37DA8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF68E1C1DA73AE400C37DA8 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +96,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A383A6D1DA729A300297D47 /* DarkSkyForecastProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyForecastProvider.swift; sourceTree = "<group>"; };
+		4A383A721DA72D1400297D47 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		4A383A741DA72E5900297D47 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		4A383A761DA7352F00297D47 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		4A383A781DA7363200297D47 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		4A671BB11DA5E260006CA036 /* Temp..app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Temp..app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA79C871DA5E2B60054230A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +120,17 @@
 		4AA79CFA1DA66F680054230A /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
 		4AA79CFB1DA66F680054230A /* Swish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swish.framework; path = Carthage/Build/iOS/Swish.framework; sourceTree = "<group>"; };
 		4AA79D271DA670E80054230A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AA79D2D1DA674420054230A /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4AA79D2F1DA6745F0054230A /* Temp.Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.Error.swift; sourceTree = "<group>"; };
+		4AA79D311DA674B00054230A /* CoreLocationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreLocationProvider.swift; sourceTree = "<group>"; };
+		4AC9BCFA1DA755A700D28CD8 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		4AC9BCFC1DA756F500D28CD8 /* PersistentDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistentDataProvider.swift; sourceTree = "<group>"; };
+		4AC9BCFE1DA7585800D28CD8 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		4AC9BD001DA75EE600D28CD8 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		4AC9BD021DA7EAC200D28CD8 /* TemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		4AC9BD041DA7ECA800D28CD8 /* TempNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempNavigationController.swift; sourceTree = "<group>"; };
+		4AE891261DA7F315003337EB /* TemperatureViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureViewModel.swift; sourceTree = "<group>"; };
+		4AF68E1C1DA73AE400C37DA8 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				4AA79C871DA5E2B60054230A /* AppDelegate.swift */,
+				4AA79D311DA674B00054230A /* CoreLocationProvider.swift */,
+				4A383A6D1DA729A300297D47 /* DarkSkyForecastProvider.swift */,
+				4AC9BCFC1DA756F500D28CD8 /* PersistentDataProvider.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -179,6 +212,9 @@
 		4AA79C881DA5E2B60054230A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4AF68E1C1DA73AE400C37DA8 /* APIClient.swift */,
+				4A383A741DA72E5900297D47 /* Date.swift */,
+				4AC9BD001DA75EE600D28CD8 /* JSON.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,6 +222,10 @@
 		4AA79C8B1DA5E2B60054230A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4A383A721DA72D1400297D47 /* Forecast.swift */,
+				4AA79D2D1DA674420054230A /* Location.swift */,
+				4AA79D2F1DA6745F0054230A /* Temp.Error.swift */,
+				4A383A761DA7352F00297D47 /* Temperature.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +233,8 @@
 		4AA79C8D1DA5E2B60054230A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				4AC9BCFA1DA755A700D28CD8 /* DataProvider.swift */,
+				4AC9BCFE1DA7585800D28CD8 /* Encodable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -209,6 +251,7 @@
 		4AA79C981DA5E2B60054230A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4AE891261DA7F315003337EB /* TemperatureViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -306,6 +349,8 @@
 		4AA79D2A1DA673360054230A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4AC9BD021DA7EAC200D28CD8 /* TemperatureViewController.swift */,
+				4AC9BD041DA7ECA800D28CD8 /* TempNavigationController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -417,7 +462,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A383A731DA72D1400297D47 /* Forecast.swift in Sources */,
+				4AC9BD011DA75EE600D28CD8 /* JSON.swift in Sources */,
+				4A383A6E1DA729A300297D47 /* DarkSkyForecastProvider.swift in Sources */,
+				4AA79D321DA674B00054230A /* CoreLocationProvider.swift in Sources */,
+				4AC9BCFD1DA756F500D28CD8 /* PersistentDataProvider.swift in Sources */,
+				4AC9BD031DA7EAC200D28CD8 /* TemperatureViewController.swift in Sources */,
+				4AC9BD051DA7ECA800D28CD8 /* TempNavigationController.swift in Sources */,
 				4AA79C9D1DA5E2B60054230A /* AppDelegate.swift in Sources */,
+				4AA79D2E1DA674420054230A /* Location.swift in Sources */,
+				4AA79D301DA6745F0054230A /* Temp.Error.swift in Sources */,
+				4AC9BCFF1DA7585800D28CD8 /* Encodable.swift in Sources */,
+				4AC9BCFB1DA755A700D28CD8 /* DataProvider.swift in Sources */,
+				4A383A751DA72E5900297D47 /* Date.swift in Sources */,
+				4A383A771DA7352F00297D47 /* Temperature.swift in Sources */,
+				4AF68E1D1DA73AE400C37DA8 /* APIClient.swift in Sources */,
+				4AE891271DA7F315003337EB /* TemperatureViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
